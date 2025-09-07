@@ -27,13 +27,12 @@ A complete ride booking application built with Expo, React Native, Convex, and O
 | Screenshot 4 | Screenshot 5 | Screenshot 6 |
 |--------------|--------------|--------------|
 | <img width="300" src="https://github.com/user-attachments/assets/4c734444-b68e-4d18-b492-ffcb77655212" /> | <img width="300" src="https://github.com/user-attachments/assets/d7c50e97-ae5f-4a54-a43c-e0b09d757c44" /> | <img width="300" src="https://github.com/user-attachments/assets/828ce77e-3b51-4123-bd64-41c1857afd2d" /> |
-| Screenshot 7| 
-|--------------|--------------|--------------|
 
-|<img width="1206" height="2622" alt="Simulator Screenshot - iPhone 16 Pro - 2025-09-07 at 23 00 44" src="https://github.com/user-attachments/assets/f2e7ec22-98b9-4e27-a5c8-ec13c6035ebf" /># RideNow - Ride Booking App|
+| Screenshot 7 | | |
+|--------------|---|---|
+| <img width="300" src="https://github.com/user-attachments/assets/f2e7ec22-98b9-4e27-a5c8-ec13c6035ebf" /> | | |
 
-
-
+# RideNow - Ride Booking App
 
 
 ## Setup Instructions
