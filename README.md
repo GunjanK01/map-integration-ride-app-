@@ -24,7 +24,7 @@ A complete ride booking application built with Expo, React Native, Convex, and O
 |--------------|--------------|--------------|
 | <img width="300" src="https://github.com/user-attachments/assets/4b1677c7-97b9-47dc-8ef1-826d7d10b27a" /> | <img width="300" src="https://github.com/user-attachments/assets/cf77bb70-d02e-455b-86fd-9d05c34445d3" /> | <img width="300" src="https://github.com/user-attachments/assets/7feec938-0b8d-4e78-89ab-11be2b27608d" /> |
 
-| Screenshot 4 | Screenshot 5 | Screenshot 6 |
+| Screenshot 4 | Screenshot 5 | Screenshot 6 (Driver Interface) |
 |--------------|--------------|--------------|
 | <img width="300" src="https://github.com/user-attachments/assets/4c734444-b68e-4d18-b492-ffcb77655212" /> | <img width="300" src="https://github.com/user-attachments/assets/d7c50e97-ae5f-4a54-a43c-e0b09d757c44" /> | <img width="300" src="https://github.com/user-attachments/assets/828ce77e-3b51-4123-bd64-41c1857afd2d" /> |
 
