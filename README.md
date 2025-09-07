@@ -1,79 +1,155 @@
-RideNow - Real-time Ride Booking App 👋
+# RideNow - Ride Booking App
 
-This is a complete ride booking application built with Expo, React Native, Convex, and OpenStreetMap.
-No Google Maps API required! 🌍
+A complete ride booking application built with Expo, React Native, Convex, and OpenStreetMap.
 
-Get started
+## Features
 
-Install dependencies
+- **Splash Screen**: Beautiful branded intro screen
+- **Role Selection**: Choose between User (rider) and Driver
+- **User Features**: 
+  - Search and book rides
+  - Live map with real-time location
+  - Track driver location and route
+  - Real-time ride status updates
+- **Driver Features**:
+  - View available rides on map
+  - Accept ride requests
+  - Real-time ride updates
+- **Backend**: Convex for real-time database and live updates
+- **Maps**: OpenStreetMap integration (no Google Maps dependency)
 
+## Setup Instructions
+
+### 1. Install Dependencies
+
+```bash
 npm install
+```
 
+### 2. Setup Convex
 
-Start the app
+1. Install Convex CLI:
+```bash
+npm install -g convex
+```
 
-npx expo start
+2. Create a Convex project:
+```bash
+npx convex dev
+```
 
+3. This will:
+   - Create a new Convex project
+   - Generate your Convex URL
+   - Deploy your schema and functions
 
-In the output, you’ll find options to open the app in a:
+### 3. Environment Configuration
 
-Development build
+1. Copy the environment file:
+```bash
+cp .env.example .env
+```
 
-Android emulator
+2. Add your Convex URL to `.env`:
+```
+EXPO_PUBLIC_CONVEX_URL=https://your-generated-url.convex.cloud
+```
 
-iOS simulator
+### 4. Run the App
 
-Expo Go
-, a limited sandbox for trying out app development with Expo
+```bash
+npm start
+```
 
-You can start developing by editing the files inside the app directory.
-This project uses file-based routing
-.
+Then choose your platform:
+- Press `i` for iOS simulator
+- Press `a` for Android emulator  
+- Press `w` for web
 
-Features
+## Project Structure
 
-🎯 Role selection (User / Driver)
+```
+├── app/                    # App screens (Expo Router)
+│   ├── _layout.tsx        # Root layout with Convex provider
+│   ├── index.tsx          # Splash screen
+│   ├── role-selection.tsx # Choose user/driver role
+│   ├── user/
+│   │   └── index.tsx      # User ride booking screen
+│   └── rider/
+│       └── index.tsx      # Driver rides screen
+├── convex/                # Backend functions and schema
+│   ├── schema.ts          # Database schema
+│   └── rides.ts           # Ride management functions
+└── assets/                # App icons and images
+```
 
-⚡ Real-time updates with Convex
+## Key Components
 
-🗺️ Live maps powered by OpenStreetMap
+### User Flow
+1. **Splash Screen** → **Role Selection** → **User Screen**
+2. User enters pickup/destination locations
+3. Books a ride (stored in Convex DB)
+4. Real-time updates show when driver accepts
+5. Live map shows driver location and route
 
-📡 GPS-based location tracking
+### Driver Flow  
+1. **Splash Screen** → **Role Selection** → **Driver Screen**
+2. Driver sees available rides on map and in list
+3. Can accept rides with one tap
+4. Real-time location sharing with users
 
-🚖 Ride booking & driver dashboard
+### Real-time Features
+- Live ride status updates
+- Driver location tracking
+- Automatic ride matching
+- Real-time database sync with Convex
 
-💵 Automatic fare calculation
+## Database Schema
 
-Project structure
-ridenow-app/
-├── app/              # Screens (Expo Router)
-│   ├── _layout.tsx
-│   ├── index.tsx
-│   ├── role-selection.tsx
-│   ├── user/         # User booking flow
-│   └── rider/        # Driver dashboard
-├── convex/           # Backend (Convex)
-│   ├── schema.ts
-│   └── rides.ts
-├── assets/           # Images & icons
-├── .env.example      # Environment variables
-├── package.json
-└── app.json
+The app uses Convex with the following collections:
 
-Learn more
+**Rides Collection:**
+- User and rider IDs
+- Pickup/destination coordinates and addresses
+- Ride status (pending/accepted/in_progress/completed)
+- Fare, distance, and duration
+- Real-time rider location updates
 
-To learn more about developing with Expo and Convex, check out:
+**Users Collection:**
+- User type (user/rider)
+- Current location
+- Online status
 
-Expo documentation
+## Technologies Used
 
-Learn Expo tutorial
+- **Frontend**: Expo 53, React Native, TypeScript
+- **Navigation**: Expo Router
+- **Maps**: react-native-maps with OpenStreetMap
+- **Backend**: Convex (real-time database)
+- **Location**: Expo Location
+- **State Management**: Convex queries and mutations
 
-Convex documentation
+## Development Notes
 
-Join the community
+- No Google Maps API required (uses OpenStreetMap)
+- No authentication needed (simplified for demo)
+- Compatible with Expo SDK 53
+- Uses only stable, conflict-free dependencies
+- Supports iOS, Android, and Web
 
-Expo on GitHub
+## Customization
 
-Convex on GitHub
+You can easily customize:
+- **Colors**: Update the color scheme in StyleSheet objects
+- **Map Style**: Modify map props in MapView components  
+- **Business Logic**: Edit Convex functions for custom ride matching
+- **UI Components**: Modify screens in the `app/` directory
 
-Expo Discord
+## Deployment
+
+The app is ready for deployment with:
+- Expo Application Services (EAS)
+- App Store / Google Play Store
+- Convex production deployment
+
+Run `eas build` after setting up EAS CLI for building production apps.
