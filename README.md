@@ -1,50 +1,79 @@
-# Welcome to your Expo app 👋
+RideNow - Real-time Ride Booking App 👋
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+This is a complete ride booking application built with Expo, React Native, Convex, and OpenStreetMap.
+No Google Maps API required! 🌍
 
-## Get started
+Get started
 
-1. Install dependencies
+Install dependencies
 
-   ```bash
-   npm install
-   ```
+npm install
 
-2. Start the app
 
-   ```bash
-   npx expo start
-   ```
+Start the app
 
-In the output, you'll find options to open the app in a
+npx expo start
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+In the output, you’ll find options to open the app in a:
 
-## Get a fresh project
+Development build
 
-When you're ready, run:
+Android emulator
 
-```bash
-npm run reset-project
-```
+iOS simulator
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Expo Go
+, a limited sandbox for trying out app development with Expo
 
-## Learn more
+You can start developing by editing the files inside the app directory.
+This project uses file-based routing
+.
 
-To learn more about developing your project with Expo, look at the following resources:
+Features
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+🎯 Role selection (User / Driver)
 
-## Join the community
+⚡ Real-time updates with Convex
 
-Join our community of developers creating universal apps.
+🗺️ Live maps powered by OpenStreetMap
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+📡 GPS-based location tracking
+
+🚖 Ride booking & driver dashboard
+
+💵 Automatic fare calculation
+
+Project structure
+ridenow-app/
+├── app/              # Screens (Expo Router)
+│   ├── _layout.tsx
+│   ├── index.tsx
+│   ├── role-selection.tsx
+│   ├── user/         # User booking flow
+│   └── rider/        # Driver dashboard
+├── convex/           # Backend (Convex)
+│   ├── schema.ts
+│   └── rides.ts
+├── assets/           # Images & icons
+├── .env.example      # Environment variables
+├── package.json
+└── app.json
+
+Learn more
+
+To learn more about developing with Expo and Convex, check out:
+
+Expo documentation
+
+Learn Expo tutorial
+
+Convex documentation
+
+Join the community
+
+Expo on GitHub
+
+Convex on GitHub
+
+Expo Discord
