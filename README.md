@@ -1,4 +1,4 @@
-# RideNow - Ride Booking App
+<img width="1206" height="2622" alt="Simulator Screenshot - iPhone 16 Pro - 2025-09-07 at 23 00 44" src="https://github.com/user-attachments/assets/f2e7ec22-98b9-4e27-a5c8-ec13c6035ebf" /># RideNow - Ride Booking App
 
 A complete ride booking application built with Expo, React Native, Convex, and OpenStreetMap.
 
@@ -17,6 +17,20 @@ A complete ride booking application built with Expo, React Native, Convex, and O
   - Real-time ride updates
 - **Backend**: Convex for real-time database and live updates
 - **Maps**: OpenStreetMap integration (no Google Maps dependency)
+
+---
+## Screenshot
+| Screenshot 1 | Screenshot 2 | Screenshot 3 |
+|--------------|--------------|--------------|
+| <img width="300" src="https://github.com/user-attachments/assets/4b1677c7-97b9-47dc-8ef1-826d7d10b27a" /> | <img width="300" src="https://github.com/user-attachments/assets/cf77bb70-d02e-455b-86fd-9d05c34445d3" /> | <img width="300" src="https://github.com/user-attachments/assets/7feec938-0b8d-4e78-89ab-11be2b27608d" /> |
+
+| Screenshot 4 | Screenshot 5 | Screenshot 6 |
+|--------------|--------------|--------------|
+| <img width="300" src="https://github.com/user-attachments/assets/4c734444-b68e-4d18-b492-ffcb77655212" /> | <img width="300" src="https://github.com/user-attachments/assets/d7c50e97-ae5f-4a54-a43c-e0b09d757c44" /> | <img width="300" src="https://github.com/user-attachments/assets/828ce77e-3b51-4123-bd64-41c1857afd2d" /> |
+
+
+
+
 
 ## Setup Instructions
 
